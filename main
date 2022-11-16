@@ -1,0 +1,37 @@
+#include <iostream>
+#include "Account.h"
+
+
+using namespace std;
+
+int main()
+{
+
+    cout<<"\n\n\n\tMAIN MENU";
+    cout<<"\n\n\t01. NEW ACCOUNT";
+    cout<<"\n\n\t02. DEPOSIT AMOUNT";
+    cout<<"\n\n\t03. WITHDRAW AMOUNT";
+    cout<<"\n\n\t04. BALANCE ENQUIRY";
+    cout<<"\n\n\t05. ALL ACCOUNT HOLDER LIST";
+    cout<<"\n\n\t06. CLOSE AN ACCOUNT";
+    cout<<"\n\n\t07. MODIFY AN ACCOUNT";
+    cout<<"\n\n\t08. EXIT";
+    cout<<"\n\n\tSelect Your Option (1-8) ";
+
+    int choice;
+    Account acc;
+    cin>>choice;
+
+    switch (choice){
+    case 1:
+        acc.Create_New_Account();
+
+    case 2:
+        acc.Deposit_Account(300);
+
+    case 8:
+        return 0;
+        }
+
+
+}
